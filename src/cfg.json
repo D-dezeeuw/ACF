@@ -1,0 +1,21 @@
+{
+  "title": "ACF v1.0.0",
+  "query": "What are considered as dangerous goods?",
+  "model": {
+    "name": "all-MiniLM-L6-v2",
+    "dim": 384,
+    "device": "cpu",
+    "scoreThreshold": 6.50,
+    "n_results":10
+  },
+  "data": {
+    "document": "src/documents/en-import.csv",
+    "structure": {
+      "key":"Question",
+      "val":"Answer"
+    }
+  },
+  "db": {
+    "group": "faq_group"
+  }
+}
