@@ -15,6 +15,12 @@
       "val":"Answer"
     }
   },
+  "server": {
+    "allow_origins": "*",
+    "allow_credentials": true,
+    "allow_methods": "*",
+    "allow_headers": "*"
+  },
   "db": {
     "group": "faq_group"
   }

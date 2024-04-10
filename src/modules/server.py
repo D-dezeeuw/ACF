@@ -29,8 +29,8 @@ def setRouting(api):
   @api.post("/filter")
   async def filter(response: filter_query):
     query = str(response.query)
-    if Config.cfg and 'db' in Config.cfg and 'collection' in Config.cfg['db']:
-        collection = Config.cfg['db']['collection']
+    if Config.cfg and 'db' in Config.cfg and 'collection' in db:
+        collection = db['collection']
         results = app.query.setQuery(collection, query)
         app.output.message(results)
         return {"results": results}

@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Chroma
+.gitignore
+
 # Distribution / packaging
 .Python
 build/
